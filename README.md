@@ -22,6 +22,7 @@ Ha: σ^2 != 3600
 
 ## Test Statistic
 
+![summary](distribution-speech.png)
 
 
 
