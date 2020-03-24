@@ -24,7 +24,7 @@ Ha: σ^2 != 3600
 
 ![summary](distribution-speech.png)
 
-
+The above table gives us the summary statistics of our dataset. If we square the standard deviation, we get our sample variance which is 3999.666. Since we are assuming the population is normally distributed and we have a random sample, the sampling distribution of sample variance 
 
 
 
