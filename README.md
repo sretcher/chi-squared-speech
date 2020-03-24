@@ -6,6 +6,7 @@ Spencer Retcher
 A study was conducted to learn about the effects of irrelevant speech on memorization (*Acoustical Science and Technology* Vol. 35, 2014). 71 subjects performed a memorization task under two conditions-with irrelevant background speech or silence. For each subject, the RDER (error between the two conditions as a percentage) was recorded. We will be using a one sample chi-squared test to see if the true standard deviation of the RDER measurements differs from 60 percent.
 
 ### Assumptions For Large Sample Chi-Squared Test
+
 1. A random sample is selected from the target population.
 2. The population is normally distributed.
 
