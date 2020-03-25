@@ -44,7 +44,7 @@ Using the formula (n−1)s^2/χ2L<σ2<(n−1)s^2/χ2H, we are 99% confident that
 
 ![ci](confidence-interval.png)
 
-## Doing the test in R
+## Doing the Test in R
 
 ```
 
@@ -58,6 +58,7 @@ sample_variance <- sd(speech$RDER)^2
 
 x_bar <- mean(speech$RDER)
 ### 78.18849
+
 library(TeachingDemos)
 
 sigma.test(x=speech$RDER,sigma=60,alternative="two.sided",conf.level = 0.99)
