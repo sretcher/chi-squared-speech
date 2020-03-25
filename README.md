@@ -3,7 +3,7 @@ Spencer Retcher
 [sretcher.github.io](https://github.com/sretcher/sretcher.github.io)
 
 ## One Sample Chi-Squared Test
-A study was conducted to learn about the effects of irrelevant speech on memorization (*Acoustical Science and Technology* Vol. 35, 2014). 71 subjects performed a memorization task under two conditions-with irrelevant background speech or silence. For each subject, the RDER (error between the two conditions as a percentage) was recorded. We will be using a one sample chi-squared test to see if the true standard deviation of the RDER measurements differs from 60 percent.
+A study was conducted to learn about the effects of irrelevant speech on memorization (*Acoustical Science and Technology* Vol. 35, 2014). 71 subjects performed a memorization task under two conditions-with irrelevant background speech or silence. For each subject, the RDER (error between the two conditions as a percentage) was recorded. We will be using a one sample chi-squared test to see if the true standard deviation of the RDER measurements differs from 60 percent. We will use a level of significance of .01 for this problem.
 
 ### Assumptions For Large Sample Chi-Squared Test
 
@@ -24,7 +24,14 @@ Ha: σ^2 != 3600
 
 ![summary](distribution-speech.png)
 
-The above table gives us the summary statistics of our dataset. If we square the standard deviation, we get our sample variance which is 3999.666. Since we are assuming the population is normally distributed and we have a random sample, the sampling distribution of the sample variance and our test statistic will have a chi-square distribution. Using the formula χ2=(n−1)s^2/σ^2, our test statistic is equal to 77.7712.
+The above table gives us the summary statistics of our dataset. If we square the standard deviation, we get our sample variance which is 3999.666. Using the formula χ2=(n−1)s^2/σ^2, our test statistic is equal to 77.7712. Since we are assuming the population is normally distributed and we have a random sample, the sampling distribution of the sample variance and our test statistic will have a chi-square distribution. 
+
+## Test of Hypotheses
+
+Using a rejection region approach, we first must find the critical values of the chi-square distribution corresponding to a df of 70 and a level of signficance of .01. 
+
+We need to find two critical values because we are doing a two-tailed test. Using a table, we find that our critical values are  χ2(.995) = 43.2752 and  χ2(.005) = 104.215. Since 77.7712 > 43.2752 and 77.7712 < 104.215, we do not have enough evidence to reject the null hypothesis.
+
 
 
 
