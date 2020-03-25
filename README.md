@@ -73,11 +73,6 @@ sigma.test(x=speech$RDER,sigma=60,alternative="two.sided",conf.level = 0.99)
 ### sample estimates:
 ### var of speech$RDER 
 ###     3999.66 
-
-
-
-
-
 ```
 
 
