@@ -50,15 +50,6 @@ Using the formula (n−1)s^2/χ2L<σ2<(n−1)s^2/χ2H, we are 99% confident that
 
 speech <- read.csv("ISR.csv",header = TRUE)
 
-n <- length(speech$RDER)
-### 71
-
-sample_variance <- sd(speech$RDER)^2
-### 3999.66
-
-x_bar <- mean(speech$RDER)
-### 78.18849
-
 library(TeachingDemos)
 
 sigma.test(x=speech$RDER,sigma=60,alternative="two.sided",conf.level = 0.99)
