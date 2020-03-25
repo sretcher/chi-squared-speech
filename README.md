@@ -14,7 +14,7 @@ We will assume that the assumptions have been fulfilled for this problem.
 
 ### Formulating Hypotheses
 
-Since the chi-squared test is used primarily for inferences about a population variance, we will need to to write our hypotheses in terms of population variance. 
+Since the chi-squared test is used primarily for inferences about a population variance, we will need to to write our hypotheses in terms of the population variance. 
 
 Ho: σ^2 = 3600
 
@@ -24,7 +24,10 @@ Ha: σ^2 != 3600
 
 ![summary](distribution-speech.png)
 
-The above table gives us the summary statistics of our dataset. If we square the standard deviation, we get our sample variance which is 3999.666. Since we are assuming the population is normally distributed and we have a random sample, the sampling distribution of sample variance 
+The above table gives us the summary statistics of our dataset. If we square the standard deviation, we get our sample variance which is 3999.666. Since we are assuming the population is normally distributed and we have a random sample, the sampling distribution of the sample variance and our test statistic will have a chi-square distribution. Using the formula χ2=(n−1)s^2/σ^2, our test statistic is equal to 77.7712.
+
+
+
 
 
 
