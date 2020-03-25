@@ -33,6 +33,52 @@ Using a rejection region approach, we first must find the critical values of the
 We need to find two critical values because we are doing a two-tailed test. Using a table, we find that our critical values are  χ2(.995) = 43.2752 and  χ2(.005) = 104.215. Since 77.7712 > 43.2752 and 77.7712 < 104.215, we do not have enough evidence to reject the null hypothesis.
 
 
+![test](test.png)
+
+Using a p-value approach, we see that .01 < .4903, so we do not reject our null hypothesis. Using a table, we see that our test statistic is between χ2(.90) and χ2(.10) for the upper tail. This means that the p-value for σ^2 > 3600 is between .10 and .90. Looking at our table, we see that the p-value for the upper tail test is indeed more than .10. Since this is a two-tail test, we can make the assumption that the p-value is greater than 2(.10) = .20. Looking at the two tailed p-value we see that .4903>.20, which agrees with our assumption. 
+
+
+## Confidence Interval
+
+Using the formula (n−1)s^2/χ2L<σ2<(n−1)s^2/χ2H, we our 99% confident that the true variance is in the interval (2686.52,6469.6). Taking the sqrt of the interval, we are 99% confident that the true standard deviation of RDER measurements is in the interval (51.8317, 80.4343). Using JMP, we get a similiar answer. 
+
+![ci](confidence-interval.png)
+
+## Doing the test in R
+
+```
+
+speech <- read.csv("ISR.csv",header = TRUE)
+
+n <- length(speech$RDER)
+### 71
+
+sample_variance <- sd(speech$RDER)^2
+### 3999.66
+
+x_bar <- mean(speech$RDER)
+### 78.18849
+library(TeachingDemos)
+
+sigma.test(x=speech$RDER,sigma=60,alternative="two.sided",conf.level = 0.99)
+
+###One sample Chi-squared test for variance
+
+### data:  speech$RDER
+### X-squared = 77.771, df = 70, p-value = 0.4903
+### alternative hypothesis: true variance is not equal to 3600
+### 99 percent confidence interval:
+### 2686.528 6469.672
+### sample estimates:
+### var of speech$RDER 
+###     3999.66 
+
+
+
+
+
+```
+
 
 
 
