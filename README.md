@@ -40,7 +40,7 @@ Using a p-value approach, we see that .01 < .4903, so we do not reject our null 
 
 ## Confidence Interval
 
-Using the formula (n−1)s^2/χ2L<σ2<(n−1)s^2/χ2H, we our 99% confident that the true variance is in the interval (2686.52,6469.6). Taking the sqrt of the interval, we are 99% confident that the true standard deviation of RDER measurements is in the interval (51.8317, 80.4343). Using JMP, we get a similiar answer. 
+Using the formula (n−1)s^2/χ2L<σ2<(n−1)s^2/χ2H, we are 99% confident that the true variance is in the interval (2686.52,6469.6). Taking the sqrt of the interval, we are 99% confident that the true standard deviation of RDER measurements is in the interval (51.8317, 80.4343). Using JMP, we get a similiar answer. 
 
 ![ci](confidence-interval.png)
 
@@ -62,7 +62,7 @@ library(TeachingDemos)
 
 sigma.test(x=speech$RDER,sigma=60,alternative="two.sided",conf.level = 0.99)
 
-###One sample Chi-squared test for variance
+### One sample Chi-squared test for variance
 
 ### data:  speech$RDER
 ### X-squared = 77.771, df = 70, p-value = 0.4903
