@@ -26,7 +26,7 @@ Ha: σ^2 != 3600
 
 The above table gives us the summary statistics of our dataset. If we square the standard deviation, we get our sample variance which is 3999.666. Using the formula χ2=(n−1)s^2/σ^2, our test statistic is equal to 77.7712. Since we are assuming the population is normally distributed and we have a random sample, the sampling distribution of the sample variance and our test statistic will have a chi-square distribution. 
 
-### Test of Hypotheses
+### Large Sample Test of Hypothesis about χ2
 
 Using a rejection region approach, we first must find the critical values of the chi-square distribution corresponding to a df of 70 and a level of signficance of .01. 
 
